@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Untitled</title>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Daj000006DDFM"
+      method="POST"
+    >
+      <input type="hidden" name="oid" value="00Daj000006DDFM" />
+      <input type="hidden" name="retURL" value="http://" />
+
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+      <!--  these lines if you wish to test in debug mode.                          -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="luuminhman02@gmail.com">                                         -->
+      <!--  ----------------------------------------------------------------------  -->
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="first_name">First Name</label
+          ><input
+            id="first_name"
+            maxlength="40"
+            name="first_name"
+            size="20"
+            type="text"
+          />
+        </div>
+
+        <div class="input-data">
+          <label for="last_name">Last Name</label
+          ><input
+            required
+            id="last_name"
+            maxlength="80"
+            name="last_name"
+            size="20"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="salutation">Salutation</label
+          ><select id="salutation" name="salutation">
+            <option value="">--None--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+            <option value="Mx.">Mx.</option>
+          </select>
+        </div>
+
+        <div class="input-data">
+          <label for="title">Title</label
+          ><input
+            id="title"
+            maxlength="40"
+            name="title"
+            size="20"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="input-data">
+        <label for="email">Email</label
+        ><input
+          required
+          id="email"
+          maxlength="80"
+          name="email"
+          size="20"
+          type="email"
+        />
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="company">Company</label
+          ><input
+            required
+            id="company"
+            maxlength="40"
+            name="company"
+            size="20"
+            type="text"
+          />
+        </div>
+
+        <div class="input-data">
+          <label for="url">Website</label
+          ><input id="url" maxlength="80" name="url" size="20" type="text" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="phone">Phone</label
+          ><input
+            id="phone"
+            maxlength="40"
+            name="phone"
+            size="20"
+            type="text"
+          />
+        </div>
+
+        <div class="input-data">
+          <label for="mobile">Mobile</label
+          ><input
+            id="mobile"
+            maxlength="40"
+            name="mobile"
+            size="20"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="input-data">
+        <label for="fax">Fax</label
+        ><input id="fax" maxlength="40" name="fax" size="20" type="text" />
+      </div>
+
+      <br /><br />
+
+      <div class="input-data">
+        <label for="street">Street</label><textarea name="street"></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="city">City</label
+          ><input id="city" maxlength="40" name="city" size="20" type="text" />
+        </div>
+
+        <div class="input-data">
+          <label for="state">State/Province</label
+          ><input
+            id="state"
+            maxlength="20"
+            name="state"
+            size="20"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="country">Country</label
+          ><input
+            id="country"
+            maxlength="40"
+            name="country"
+            size="20"
+            type="text"
+          />
+        </div>
+
+        <div class="input-data">
+          <label for="zip">Zip</label
+          ><input id="zip" maxlength="20" name="zip" size="20" type="text" />
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="lead_source">Lead Source</label
+          ><select required id="lead_source" name="lead_source">
+            <option value="">--None--</option>
+            <option value="Web" selected>Web</option>
+            <option value="Phone Inquiry">Phone Inquiry</option>
+            <option value="Partner Referral">Partner Referral</option>
+            <option value="Purchased List">Purchased List</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-data">
+          <label for="industry">Industry</label
+          ><select id="industry" name="industry">
+            <option value="">--None--</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Apparel">Apparel</option>
+            <option value="Banking">Banking</option>
+            <option value="Biotechnology">Biotechnology</option>
+            <option value="Chemicals">Chemicals</option>
+            <option value="Communications">Communications</option>
+            <option value="Construction">Construction</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Education">Education</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Energy">Energy</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Environmental">Environmental</option>
+            <option value="Finance">Finance</option>
+            <option value="Food &amp; Beverage">Food &amp; Beverage</option>
+            <option value="Government">Government</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Hospitality">Hospitality</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Machinery">Machinery</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Media">Media</option>
+            <option value="Not For Profit">Not For Profit</option>
+            <option value="Recreation">Recreation</option>
+            <option value="Retail">Retail</option>
+            <option value="Shipping">Shipping</option>
+            <option value="Technology">Technology</option>
+            <option value="Telecommunications">Telecommunications</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-data">
+        <label for="revenue">Annual Revenue</label
+        ><input required id="revenue" name="revenue" size="20" type="text" />
+      </div>
+
+      <div class="form-row">
+        <div class="input-data">
+          <label for="employees">Employees</label
+          ><input
+            required
+            id="employees"
+            name="employees"
+            size="20"
+            type="text"
+            value=""
+          />
+        </div>
+
+        <div class="input-data">
+          <label for="00Naj0000028uSK">Number of Locations</label>
+          <input
+            id="00Naj0000028uSK"
+            name="00Naj0000028uSK"
+            size="20"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="input-data">
+        <label for="00Naj000002C80f">NAICS Codes</label>
+        <select
+          required
+          id="00Naj000002C80f"
+          name="00Naj000002C80f"
+          title="NAICS Codes"
+        >
+          <option value="">--None--</option>
+          <option
+            value="541611: Administrative Management and General Management Consulting Services"
+          >
+            541611: Administrative Management and General Management Consulting
+            Services
+          </option>
+          <option
+            value="541690: Other Scientific and Technical Consulting Services"
+          >
+            541690: Other Scientific and Technical Consulting Services
+          </option>
+          <option value="541330: Engineering Services">
+            541330: Engineering Services
+          </option>
+          <option value="561210: Facilities Support Services">
+            561210: Facilities Support Services
+          </option>
+          <option value="541820: Public Relations Agencies">
+            541820: Public Relations Agencies
+          </option>
+          <option value="541512: Computer Systems Design Services">
+            541512: Computer Systems Design Services
+          </option>
+          <option value="541519: Other Computer Related Services">
+            541519: Other Computer Related Services
+          </option>
+          <option
+            value="519130: Internet Publishing and Broadcasting and Web Search Portals"
+          >
+            519130: Internet Publishing and Broadcasting and Web Search Portals
+          </option>
+          <option value="541618: Other Management Consulting Services">
+            541618: Other Management Consulting Services
+          </option>
+          <option
+            value="333316: Photographic and Photocopying Equipment Manufacturing"
+          >
+            333316: Photographic and Photocopying Equipment Manufacturing
+          </option>
+        </select>
+      </div>
+
+      <div class="input-data">
+        <label for="00Naj000002EjBV">Product Title</label>
+        <input
+          required
+          id="00Naj000002EjBV"
+          maxlength="255"
+          name="00Naj000002EjBV"
+          size="20"
+          type="text"
+        />
+      </div>
+
+      <div class="input-data">
+        <label for="00Naj000002EjXB">Product Description</label>
+        <textarea
+          required
+          id="00Naj000002EjXB"
+          name="00Naj000002EjXB"
+          rows="5"
+          type="text"
+          wrap="soft"
+        ></textarea>
+      </div>
+
+      <br /><br />
+
+      <input type="submit" name="submit" />
+    </form>
+  </body>
+</html>
